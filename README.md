@@ -21,5 +21,7 @@ WeatherNow is a beautifully designed real-time weather web application that prov
 ✅ Search Functionality – Instantly search for weather details of any city worldwide.
 ✅ Dynamic Background – A visually appealing background that enhances the user experience.
 
+**OUTPUT OF THE TASK**
 
+<!-- Uploading "Screenshot 2025-02-20 180556.png"... -->
 
