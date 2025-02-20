@@ -1,0 +1,98 @@
+/* styles.css */
+.weather-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url('https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?cs=srgb&dl=pexels-brett-sayles-1431822.jpg&fm=jpg');
+  background-size: cover;
+  padding: 20px;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 25px;
+  border-radius: 15px;
+  color: white;
+  width: 90%;
+  max-width: 400px;
+}
+
+.weather-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.detail-box {
+  text-align: center;
+  padding: 10px;
+  background: rgb(255, 248, 248, 0.5);
+  border-radius: 10px;
+  flex: 1;
+  min-width: 100px;
+  color: black;
+}
+
+.forecast-container {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+}
+
+.forecast-cards {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.forecast-card {
+  background: rgb(255, 248, 248, 0.3);
+  padding: 10px;
+  border-radius: 8px;
+  min-width: 100px;
+  text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .weather-card {
+    max-width: 90%;
+  }
+
+  .forecast-cards {
+    gap: 5px;
+    padding-bottom: 5px;
+  }
+
+  .forecast-card {
+    min-width: 80px; /* Reduce size for small screens */
+  }
+
+  .detail-box {
+    flex: 1;
+    min-width: 80px; /* Reduce size for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .forecast-card {
+    min-width: 70px; /* Further reduce size for mobile screens */
+  }
+
+  .detail-box {
+    min-width: 60px; /* Adjust detail box size for mobile */
+  }
+
+  .weather-card {
+    padding: 15px; /* Reduce padding for mobile */
+  }
+}
